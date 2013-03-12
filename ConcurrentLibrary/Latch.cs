@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ConcurrentLibrary
+﻿namespace ConcurrentLibrary
 {
     public class Latch
     {
-        private Semaphore ready = new Semaphore(0);
+        private Semaphore ready = new Semaphore();
 
         public void Acquire()
         {
