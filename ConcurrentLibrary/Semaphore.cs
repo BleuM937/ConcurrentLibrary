@@ -23,11 +23,13 @@
             }
         }
 
-        public void Release()
+        public void Release(int count = 1)
         {
+            if (count < 1)
+                throw new ArgumentOutOfRangeException("count", "Count must be greater than zero.");
             lock (tokenLock)
             {
-                ++tokens;
+                tokens += count;
                 Monitor.PulseAll(tokenLock);
             }
         }
