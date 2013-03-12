@@ -11,8 +11,8 @@
             var semaphore = new Semaphore();
 
             new Thread(Producer) { Name = "Producer 1" }.Start(semaphore);
-            new Thread(Consumer) { Name = "Consumer 1" }.Start(semaphore);
-            new Thread(Consumer) { Name = "Consumer 2" }.Start(semaphore);
+            new Thread(Consumer) { Name = "\t\tConsumer 1" }.Start(semaphore);
+            new Thread(Consumer) { Name = "\t\t\tConsumer 2" }.Start(semaphore);
         }
 
         private static void Producer(object param)

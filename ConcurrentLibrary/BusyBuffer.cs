@@ -5,20 +5,27 @@
 
     public class BusyBuffer<T> : IBuffer<T>
     {
-        private List<T> _items = new List<T>();
-
+        private Queue<T> _items = new Queue<T>();
         public void Put(T data)
         {
             lock (_items)
             {
-                _items.Add(data);
+                _items.Enqueue(data);
             }
         }
 
         public T Take()
         {
-            // TODO: How to implement busy wait with locking
-            throw new NotImplementedException();
+            while (true)
+            {
+                lock (_items)
+                {
+                    if (_items.Count > 0)
+                    {
+                        return _items.Dequeue();
+                    }
+                }
+            }
         }
     }
 }

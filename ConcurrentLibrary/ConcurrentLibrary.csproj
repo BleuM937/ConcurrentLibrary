@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BalkingBuffer.cs" />
+    <Compile Include="BoundedChannel.cs" />
     <Compile Include="BusyBuffer.cs" />
     <Compile Include="Channel.cs" />
     <Compile Include="IBuffer.cs" />
