@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreTest", "SemaphoreT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BufferTest", "BufferTest\BufferTest.csproj", "{BE791F5E-502B-4DF8-BC1A-C563C6F83370}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BalkingBufferTest|Any CPU = BalkingBufferTest|Any CPU
@@ -32,6 +34,12 @@ Global
 		{BE791F5E-502B-4DF8-BC1A-C563C6F83370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE791F5E-502B-4DF8-BC1A-C563C6F83370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE791F5E-502B-4DF8-BC1A-C563C6F83370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.BalkingBufferTest|Any CPU.ActiveCfg = Release|Any CPU
+		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.BalkingBufferTest|Any CPU.Build.0 = Release|Any CPU
+		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
