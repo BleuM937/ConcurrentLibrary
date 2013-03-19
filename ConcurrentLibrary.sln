@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatchTest", "LatchTest\Latc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BalkingBufferTest|Any CPU = BalkingBufferTest|Any CPU
