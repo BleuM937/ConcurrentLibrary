@@ -13,6 +13,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatchTest", "LatchTest\LatchTest.csproj", "{543862B1-E3C7-4794-8E27-099CF468C419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendezvousTest", "RendezvousTest\RendezvousTest.csproj", "{14956EA7-2A07-45AA-9938-08BB61A50E34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +60,12 @@ Global
 		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{564DE49D-8E63-4924-B0D2-6FAA5404118F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14956EA7-2A07-45AA-9938-08BB61A50E34}.BalkingBufferTest|Any CPU.ActiveCfg = Release|Any CPU
+		{14956EA7-2A07-45AA-9938-08BB61A50E34}.BalkingBufferTest|Any CPU.Build.0 = Release|Any CPU
+		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
