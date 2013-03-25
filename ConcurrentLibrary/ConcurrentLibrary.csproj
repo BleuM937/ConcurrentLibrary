@@ -46,6 +46,7 @@
     <Compile Include="Channel.cs" />
     <Compile Include="IBuffer.cs" />
     <Compile Include="Latch.cs" />
+    <Compile Include="Mutex.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Semaphore.cs" />
     <Compile Include="WaitBuffer.cs" />
