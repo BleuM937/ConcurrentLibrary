@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatchTest", "LatchTest\Latc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendezvousTest", "RendezvousTest\RendezvousTest.csproj", "{14956EA7-2A07-45AA-9938-08BB61A50E34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTest", "MutexTest\MutexTest.csproj", "{747224D1-318A-49E2-A746-9EC8E86CEBB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BalkingBufferTest|Any CPU = BalkingBufferTest|Any CPU
@@ -56,6 +58,12 @@ Global
 		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14956EA7-2A07-45AA-9938-08BB61A50E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.BalkingBufferTest|Any CPU.ActiveCfg = Release|Any CPU
+		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.BalkingBufferTest|Any CPU.Build.0 = Release|Any CPU
+		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
