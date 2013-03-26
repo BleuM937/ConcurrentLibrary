@@ -7,8 +7,8 @@
     <ProjectGuid>{BE791F5E-502B-4DF8-BC1A-C563C6F83370}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConcurrentLibrary.BufferTest</RootNamespace>
-    <AssemblyName>ConcurrentLibrary.BufferTest</AssemblyName>
+    <RootNamespace>ConcurrentLibrary.ChannelTest</RootNamespace>
+    <AssemblyName>ConcurrentLibrary.ChannelTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConcurrentLibrary.BufferTest.ChannelTest</StartupObject>
+    <StartupObject>ConcurrentLibrary.ChannelTest.ChannelTest</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,11 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BufferTest.cs" />
-    <Compile Include="BalkingBufferTest.cs" />
     <Compile Include="ChannelTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WaitBufferTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConcurrentLibrary\ConcurrentLibrary.csproj">

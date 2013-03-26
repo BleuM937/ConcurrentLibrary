@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentLibrary", "Concur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreTest", "SemaphoreTest\SemaphoreTest.csproj", "{094FFE50-BABB-4EB2-A554-4EE2014C1B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BufferTest", "BufferTest\BufferTest.csproj", "{BE791F5E-502B-4DF8-BC1A-C563C6F83370}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelTest", "BufferTest\ChannelTest.csproj", "{BE791F5E-502B-4DF8-BC1A-C563C6F83370}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierTest", "BarrierTest\BarrierTest.csproj", "{564DE49D-8E63-4924-B0D2-6FAA5404118F}"
 EndProject
