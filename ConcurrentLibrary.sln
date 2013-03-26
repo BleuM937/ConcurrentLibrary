@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RendezvousTest", "Rendezvou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTest", "MutexTest\MutexTest.csproj", "{747224D1-318A-49E2-A746-9EC8E86CEBB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightSwitchTest", "LightSwitchTest\LightSwitchTest.csproj", "{5E593076-39CB-4695-8F6F-5A0331DBFE09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BalkingBufferTest|Any CPU = BalkingBufferTest|Any CPU
@@ -64,6 +66,12 @@ Global
 		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{747224D1-318A-49E2-A746-9EC8E86CEBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.BalkingBufferTest|Any CPU.ActiveCfg = Release|Any CPU
+		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.BalkingBufferTest|Any CPU.Build.0 = Release|Any CPU
+		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
