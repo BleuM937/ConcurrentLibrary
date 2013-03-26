@@ -1,26 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ConcurrentLibrary.BufferTest
+﻿namespace ConcurrentLibrary.ChannelTest
 {
-    class ChannelTest : BufferTest
-    {
-        protected override void InitializeBuffers()
-        {
-            buffer1 = new Channel<string>();
-            buffer2 = new Channel<string>();
-        }
+    using System;
+    using System.Threading;
 
+    class ChannelTest
+    {
         static void Main(string[] args)
         {
-            ChannelTest test = new ChannelTest();
+            Channel<string> channel = new Channel<string>();
 
-            string logPath = "log.txt";
-            if (args.Length > 0) logPath = args[0];
+            for (int i = 0; i < 2; i++)
+            {
+                new Thread((p) =>
+                    {
+                        int n = (int)p;
+                        Random random = new Random();
+                        for (int j = 0; true; j++)
+                        {
+                            string item = string.Concat(n, ":", j);
+                            Console.WriteLine("{0} putting {1}", Thread.CurrentThread.Name, item);
+                            channel.Put(item);
+                            Thread.Sleep(random.Next(1500, 3000));
+                        }
+                    }) { Name = "Put " + i }.Start(i);
+            }
 
-            test.BeginTest(logPath);
+            for (int i = 0; i < 4; i++)
+            {
+                new Thread(() =>
+                    {
+                        while (true)
+                        {
+                            Console.WriteLine("{0} taking", Thread.CurrentThread.Name);
+                            string item = channel.Take();
+                            Console.WriteLine("{0} took {1}", Thread.CurrentThread.Name, item);
+                        }
+                    }) { Name = "Take " + i }.Start();
+            }
         }
     }
 }
