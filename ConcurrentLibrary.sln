@@ -22,6 +22,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTest", "MutexTest\MutexTest.csproj", "{747224D1-318A-49E2-A746-9EC8E86CEBB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightSwitchTest", "LightSwitchTest\LightSwitchTest.csproj", "{5E593076-39CB-4695-8F6F-5A0331DBFE09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelTest", "BufferTest\ChannelTest.csproj", "{BE791F5E-502B-4DF8-BC1A-C563C6F83370}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
