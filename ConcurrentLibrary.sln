@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTest", "MutexTest\Mute
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightSwitchTest", "LightSwitchTest\LightSwitchTest.csproj", "{5E593076-39CB-4695-8F6F-5A0331DBFE09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderWriterLockTest", "ReaderWriterLockTest\ReaderWriterLockTest.csproj", "{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BalkingBufferTest|Any CPU = BalkingBufferTest|Any CPU
@@ -72,6 +74,12 @@ Global
 		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E593076-39CB-4695-8F6F-5A0331DBFE09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.BalkingBufferTest|Any CPU.ActiveCfg = Release|Any CPU
+		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.BalkingBufferTest|Any CPU.Build.0 = Release|Any CPU
+		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
