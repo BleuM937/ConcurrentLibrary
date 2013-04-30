@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class BoundedChannel<T>
+    public class BoundedChannel<T> : IBuffer<T>
     {
         private Semaphore spacesAvailable;
         private Channel<T> channel;
