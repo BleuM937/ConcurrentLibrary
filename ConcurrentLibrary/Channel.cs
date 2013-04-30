@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ConcurrentLibrary
 {
-    public class Channel<T>
+    public class Channel<T> : IBuffer<T>
     {
         private Semaphore itemCount = new Semaphore(0);
 
