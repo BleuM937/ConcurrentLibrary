@@ -2,33 +2,55 @@
 {
     using System;
     using ConcurrentLibrary;
-    using Thread = System.Threading.Thread;
+    using System.Threading;
 
     class Program
     {
         static void Main(string[] args)
         {
-            Semaphore sem1 = new Semaphore(), sem2 = new Semaphore();
+            Rendezvous<string> rendezvous = new Rendezvous<string>();
 
-            new Thread(Rendezvous) { Name = "Thread 1" }.Start(Tuple.Create(sem1, sem2));
-            new Thread(Rendezvous) { Name = "Thread 2" }.Start(Tuple.Create(sem2, sem1));
+            var inputColors = new[] 
+            {
+                ConsoleColor.DarkRed,
+                ConsoleColor.DarkGreen,
+                ConsoleColor.DarkBlue,
+                ConsoleColor.DarkYellow            
+            };
+            var outputColors = new[]
+            {
+                ConsoleColor.Red,
+                ConsoleColor.Green,
+                ConsoleColor.Blue,
+                ConsoleColor.Yellow
+            };
+
+            for (int i = 0; i < 4; i++)
+            {
+                Thread.Sleep(1000);
+                new Thread((param) =>
+                {
+                    int n = (int)param;
+                    Random random = new Random();
+                    for (int j = 0; true; j++)
+                    {
+                        Thread.Sleep(random.Next(2500, 4000));
+                        string input = string.Concat(n, ":", j);
+                        WriteLineWithColor(inputColors[n], "Thread {0} --> {1}", n, input);
+                        string output = rendezvous.Exchange(input);
+                        WriteLineWithColor(outputColors[n], "Thread {0} <-- {1}", n, output);
+                    }
+                }).Start(i);
+            }
         }
 
-        static void Rendezvous(object param)
+        static readonly object consoleLock = new object();
+        static void WriteLineWithColor(ConsoleColor color, string format, params object[] args)
         {
-            var sems = param as Tuple<Semaphore, Semaphore>;
-            var random = new Random();
-
-            var thisReady = sems.Item1;
-            var otherReady = sems.Item2;
-
-            for (int i = 0; true; i++)
+            lock (consoleLock)
             {
-                Console.WriteLine("{0}: Preparing to rendezvous {1}", Thread.CurrentThread.Name, i);
-                Thread.Sleep(random.Next(2000, 3000));
-                thisReady.Release();
-                otherReady.Acquire();
-                Console.WriteLine("{0}: Arrived at rendezvous {1}", Thread.CurrentThread.Name, i);
+                Console.ForegroundColor = color;
+                Console.WriteLine(format, args);
             }
         }
     }
