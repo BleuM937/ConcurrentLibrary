@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightSwitchTest", "LightSwi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderWriterLockTest", "ReaderWriterLockTest\ReaderWriterLockTest.csproj", "{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongSemaphoreTest", "StrongSemaphoreTest\StrongSemaphoreTest.csproj", "{C4624FC6-04BC-4B16-9805-F2288586DF6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BalkingBufferTest|Any CPU = BalkingBufferTest|Any CPU
@@ -80,6 +82,12 @@ Global
 		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47084B66-EFAA-4EE7-84E2-8100D5A0AC77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4624FC6-04BC-4B16-9805-F2288586DF6E}.BalkingBufferTest|Any CPU.ActiveCfg = Release|Any CPU
+		{C4624FC6-04BC-4B16-9805-F2288586DF6E}.BalkingBufferTest|Any CPU.Build.0 = Release|Any CPU
+		{C4624FC6-04BC-4B16-9805-F2288586DF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4624FC6-04BC-4B16-9805-F2288586DF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4624FC6-04BC-4B16-9805-F2288586DF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4624FC6-04BC-4B16-9805-F2288586DF6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
