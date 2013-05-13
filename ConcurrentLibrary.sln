@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrongSemaphoreTest", "Stro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifoSemaphoreTest", "FifoSemaphoreTest\FifoSemaphoreTest.csproj", "{611C776F-D80D-4F39-9772-B7453D617A48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedChannelTest", "BoundedChannelTest\BoundedChannelTest.csproj", "{D25C6A42-35E6-4D03-9379-10D6007913FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{611C776F-D80D-4F39-9772-B7453D617A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{611C776F-D80D-4F39-9772-B7453D617A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{611C776F-D80D-4F39-9772-B7453D617A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25C6A42-35E6-4D03-9379-10D6007913FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25C6A42-35E6-4D03-9379-10D6007913FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25C6A42-35E6-4D03-9379-10D6007913FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25C6A42-35E6-4D03-9379-10D6007913FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
